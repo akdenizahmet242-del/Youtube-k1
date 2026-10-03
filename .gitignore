@@ -1,0 +1,29 @@
+# Ortam değişkenleri / gizli bilgiler
+.env
+.env.*
+!.env.example
+
+# Python sanal ortam
+venv/
+.venv/
+__pycache__/
+
+# Node
+node_modules/
+
+# İş ve çıktı klasörleri
+jobs/
+ready/
+
+# Medya dosyaları
+*.mp4
+*.wav
+*.mp3
+
+# Veritabanı dosyaları
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
