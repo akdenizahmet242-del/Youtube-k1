@@ -27,3 +27,9 @@ ready/
 *.db-journal
 *.db-wal
 *.db-shm
+
+# Araç önbellekleri
+.pytest_cache/
+
+# İndirilen referans görsel kütüphanesi (büyük; lisans bilgisi manifest'lerde)
+assets/ref_library/
