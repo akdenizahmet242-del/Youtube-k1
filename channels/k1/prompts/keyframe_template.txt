@@ -1,0 +1,13 @@
+[1 PURPOSE] Keyframe {Kxx} of a photoreal vertical 9:16 technical Short. This is the {start|end} frame of shot {Sxx}: "{shot title}".
+[2 REFERENCES] Use the attached images as ground truth for shape, proportions and part layout:
+  Image 1 = {ref description, e.g. "real inline-4 turbo-diesel engine in an SUV engine bay, top view"}
+  Image 2 = {...}
+  Style images = channel look (lighting, colors, orange section faces). Match their look, not their content.
+  Do NOT copy any reference literally. Do NOT invent parts that the references and the component list do not show.
+[3 SUBJECT] {every visible part: name, count, material, finish, color, size relative to frame, exact position (left/right/top/bottom, foreground/background), current state, e.g. "piston at bottom dead center, both intake valves open 8 mm, exhaust valves closed"}
+[4 COMPOSITION] Camera position {x/height}, angle {e.g. 15 degrees above, looking down the cylinder axis}, lens {e.g. 35 mm equivalent}, framing {subject fills the central 60% of frame, top 15% and bottom 25% kept calm for on-screen text}.
+[5 LIGHTING] Studio key light from upper left, warm 4500K; cool rim light from back right; soft reflections on metal; dark charcoal background #15171B with subtle gradient. In cutaway frames, combustion areas glow from inside.
+[6 MATERIALS & COLOR CODE] Cast iron block dark grey; aluminium head and pistons light silver; forged steel crank dark steel; section faces solid orange #FF7A1A; air particles light blue; heated air orange; diesel spray yellow; combustion white-yellow-orange; exhaust grey.
+[7 CONTINUITY] Must match the previous keyframe {Kxx-1} exactly in camera, lighting and part design (attached as style image).
+[8 PHOTOREALISM] Photoreal 3D render quality, physically accurate, sharp focus on subject, shallow depth of field in background only, no cartoon style.
+[9 FORBIDDEN] {Bölüm 7.1 listesinin tamamı}

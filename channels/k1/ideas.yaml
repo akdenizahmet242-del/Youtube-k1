@@ -1,0 +1,364 @@
+# Kanal 1 konu havuzu (Bölüm 16). Videoya giren alanlar İngilizce.
+# hook_question boşsa senaryo planlayıcı onu doğrulanmış gerçeklerden yazar.
+# Her fikirde tam zincir zorunlu: dış sahne → içeri dalış → mekanizma → "sonra ne oluyor?" → sonuç.
+# Tüm cihazlar markasız; sahnelerde insan yok.
+ideas:
+  - id: diesel-engine
+    title: How a diesel engine moves a car
+    device: inline-4 turbo-diesel car engine
+    category: engine
+    real_world_context: A dark grey unbranded mid-size SUV driving on an empty coastal road at sunset.
+    mechanism: Four-stroke cycle with compression ignition; no spark plugs.
+    chain_to_result: crankshaft -> gearbox -> driveshaft -> differential -> wheels turn -> the car moves
+    hook_question: This SUV has no spark plugs. So how does it burn its fuel?
+    status: available
+
+  - id: petrol-engine
+    title: How a petrol engine works
+    device: inline-4 petrol car engine
+    category: engine
+    real_world_context: An unbranded silver sedan driving through a quiet city street at dusk.
+    mechanism: Four-stroke cycle with spark ignition from the spark plug.
+    chain_to_result: crankshaft -> gearbox -> wheels turn -> the car moves
+    hook_question: null
+    status: available
+
+  - id: cpu
+    title: How a CPU works
+    device: desktop computer processor
+    category: computing
+    real_world_context: An open desktop computer on a desk, a colorful game scene on the monitor, no visible text.
+    mechanism: Billions of transistors switch on and off in step with the clock signal; the instruction pipeline.
+    chain_to_result: electricity -> logic gates -> calculation -> graphics card -> a new frame on the screen
+    hook_question: null
+    status: available
+
+  - id: split-air-conditioner
+    title: How an air conditioner cools a room
+    device: split-type wall air conditioner
+    category: cooling
+    real_world_context: A sunlit, hot living room with a split air conditioner on the wall and its outdoor unit outside.
+    mechanism: Compressor, condenser, expansion valve and evaporator in a closed refrigerant loop.
+    chain_to_result: refrigerant carries heat outside -> cold air blows inside -> the room cools down
+    hook_question: null
+    status: available
+
+  - id: oled-tv
+    title: How an OLED TV makes a picture
+    device: OLED television panel
+    category: display
+    real_world_context: A switched-on TV in a dark room showing a colorful landscape.
+    mechanism: Each pixel is an organic LED with red, green and blue subpixels that emit their own light.
+    chain_to_result: signal -> pixel current -> light -> image
+    hook_question: null
+    status: available
+
+  - id: lcd-tv
+    title: How an LCD TV makes a picture
+    device: LCD television panel
+    category: display
+    real_world_context: A TV in a living room showing a nature scene.
+    mechanism: Backlight, polarizers and liquid crystal shutters with color filters.
+    chain_to_result: light -> crystals twist -> color filter -> image
+    hook_question: null
+    status: available
+
+  - id: refrigerator
+    title: How a refrigerator keeps food cold
+    device: household refrigerator
+    category: cooling
+    real_world_context: A refrigerator standing in a clean kitchen.
+    mechanism: Compressor, condenser coils, capillary tube and evaporator.
+    chain_to_result: heat is pulled from inside -> released at the back -> the inside stays cold
+    hook_question: null
+    status: available
+
+  - id: automatic-transmission
+    title: How an automatic transmission works
+    device: automatic car gearbox
+    category: drivetrain
+    real_world_context: An unbranded car pulling away from a stop.
+    mechanism: Torque converter and planetary gear sets.
+    chain_to_result: engine -> torque converter -> planetary gears -> wheels
+    hook_question: null
+    status: available
+
+  - id: manual-clutch
+    title: How a car clutch works
+    device: manual transmission clutch
+    category: drivetrain
+    real_world_context: A car changing gear on an open road, seen from outside.
+    mechanism: Pressure plate, clutch disc and flywheel.
+    chain_to_result: engine and gearbox connect -> power flows -> the car moves
+    hook_question: null
+    status: available
+
+  - id: disc-brake-abs
+    title: How disc brakes and ABS stop a car
+    device: hydraulic disc brake with ABS
+    category: vehicle-safety
+    real_world_context: An unbranded car braking on a wet road in the rain.
+    mechanism: Hydraulic pressure, caliper, pads and the ABS valve block.
+    chain_to_result: pedal -> hydraulic pressure -> pads squeeze the disc -> the car stops without skidding
+    hook_question: null
+    status: available
+
+  - id: turbocharger
+    title: How a turbocharger adds power
+    device: exhaust-driven turbocharger
+    category: engine
+    real_world_context: An unbranded truck climbing a steep road.
+    mechanism: Exhaust turbine spins a shared shaft that drives the intake compressor.
+    chain_to_result: exhaust -> turbine -> compressor -> more air -> more power
+    hook_question: null
+    status: available
+
+  - id: ev-motor
+    title: How an electric car motor works
+    device: electric vehicle drive motor
+    category: electric-vehicle
+    real_world_context: An unbranded electric car pulling away silently.
+    mechanism: Battery, inverter and a rotating magnetic field in the stator.
+    chain_to_result: battery -> inverter -> stator -> rotor -> wheels
+    hook_question: null
+    status: available
+
+  - id: lithium-ion-battery
+    title: How a lithium-ion battery stores energy
+    device: lithium-ion battery cell
+    category: electric-vehicle
+    real_world_context: A smartphone charging on a desk, blank screen.
+    mechanism: Lithium ions move between the anode and the cathode through the electrolyte.
+    chain_to_result: charging -> ions stored -> discharging -> the phone runs
+    hook_question: null
+    status: available
+
+  - id: jet-engine
+    title: How a jet engine lifts a plane
+    device: high-bypass turbofan engine
+    category: aviation
+    real_world_context: An unbranded airliner taking off from a runway.
+    mechanism: Fan, compressor, combustion chamber and turbine.
+    chain_to_result: thrust -> the plane accelerates -> it lifts off
+    hook_question: null
+    status: available
+
+  - id: helicopter-rotor
+    title: How a helicopter rotor steers
+    device: helicopter main rotor with swashplate
+    category: aviation
+    real_world_context: An unbranded helicopter lifting off a helipad.
+    mechanism: Swashplate, collective and cyclic blade pitch.
+    chain_to_result: blade angle -> lift -> direction
+    hook_question: null
+    status: available
+
+  - id: elevator
+    title: How an elevator lifts you
+    device: traction elevator
+    category: building
+    real_world_context: A glass skyscraper with an elevator car moving up the shaft.
+    mechanism: Traction sheave, counterweight and safety brake.
+    chain_to_result: motor -> ropes -> the car rises
+    hook_question: null
+    status: available
+
+  - id: escalator
+    title: How an escalator makes its steps
+    device: escalator
+    category: building
+    real_world_context: An empty escalator moving in a shopping mall.
+    mechanism: Step chain and two sets of step rails.
+    chain_to_result: motor -> chain -> steps flatten and rise
+    hook_question: null
+    status: available
+
+  - id: washing-machine
+    title: How a washing machine cleans clothes
+    device: front-loading washing machine
+    category: home-appliance
+    real_world_context: A washing machine running in a laundry room.
+    mechanism: Drum, motor, pump and the spin cycle.
+    chain_to_result: water and tumbling -> dirt loosens -> spin throws the water out
+    hook_question: null
+    status: available
+
+  - id: dishwasher
+    title: How a dishwasher cleans dishes
+    device: built-in dishwasher
+    category: home-appliance
+    real_world_context: A dishwasher in a kitchen.
+    mechanism: Pump, rotating spray arms and the heating element.
+    chain_to_result: hot water jets -> clean dishes
+    hook_question: null
+    status: available
+
+  - id: microwave-oven
+    title: How a microwave heats food
+    device: microwave oven
+    category: home-appliance
+    real_world_context: A microwave oven running with a bowl of soup inside.
+    mechanism: Magnetron and waveguide.
+    chain_to_result: microwaves -> water molecules vibrate -> the food heats up
+    hook_question: null
+    status: available
+
+  - id: induction-cooktop
+    title: How an induction cooktop boils water
+    device: induction cooktop
+    category: home-appliance
+    real_world_context: A pot of water boiling on an induction cooktop.
+    mechanism: Copper coil and eddy currents.
+    chain_to_result: magnetic field -> current in the pot -> heat
+    hook_question: null
+    status: available
+
+  - id: cyclone-vacuum
+    title: How a cyclone vacuum separates dust
+    device: cyclonic vacuum cleaner
+    category: home-appliance
+    real_world_context: A vacuum cleaner moving across a carpet on its own stand, no person visible.
+    mechanism: Motor, fan and cyclone separation.
+    chain_to_result: suction -> air spins -> dust is thrown out of the airflow
+    hook_question: null
+    status: available
+
+  - id: wind-turbine
+    title: How a wind turbine makes electricity
+    device: horizontal-axis wind turbine
+    category: energy
+    real_world_context: A wind turbine turning on a green hilltop.
+    mechanism: Blades, gearbox and generator in the nacelle.
+    chain_to_result: wind -> rotation -> electricity -> city lights turn on
+    hook_question: null
+    status: available
+
+  - id: hydroelectric-dam
+    title: How a dam makes electricity
+    device: hydroelectric power station
+    category: energy
+    real_world_context: A large concrete dam with water flowing out below.
+    mechanism: Penstock, turbine and generator.
+    chain_to_result: falling water -> turbine -> electricity
+    hook_question: null
+    status: available
+
+  - id: nuclear-power-plant
+    title: How a nuclear power plant makes electricity
+    device: pressurized water reactor power plant
+    category: energy
+    real_world_context: Cooling towers releasing steam at dawn.
+    mechanism: Fission, steam generator and turbine.
+    chain_to_result: heat -> steam -> turbine -> electricity
+    hook_question: null
+    status: available
+
+  - id: solar-panel
+    title: How a solar panel makes electricity
+    device: photovoltaic solar panel
+    category: energy
+    real_world_context: Solar panels on a house roof in bright sun.
+    mechanism: Photovoltaic cells and electron flow.
+    chain_to_result: sunlight -> current -> inverter -> the house
+    hook_question: null
+    status: available
+
+  - id: hydraulic-excavator
+    title: How an excavator lifts tons
+    device: hydraulic excavator
+    category: heavy-machinery
+    real_world_context: An unbranded excavator digging on a construction site, cab windows dark.
+    mechanism: Pump, hydraulic cylinders and valves.
+    chain_to_result: engine -> hydraulic pressure -> the arm moves
+    hook_question: null
+    status: available
+
+  - id: diesel-electric-locomotive
+    title: How a diesel-electric locomotive pulls a train
+    device: diesel-electric locomotive
+    category: heavy-machinery
+    real_world_context: A freight train crossing open country.
+    mechanism: Diesel engine drives a generator that powers traction motors.
+    chain_to_result: electricity -> traction motors -> wheels -> the train moves
+    hook_question: null
+    status: available
+
+  - id: mechanical-watch
+    title: How a mechanical watch keeps time
+    device: mechanical wristwatch movement
+    category: precision
+    real_world_context: An unbranded mechanical wristwatch resting on a dark wooden desk.
+    mechanism: Mainspring, escapement and balance wheel.
+    chain_to_result: energy released step by step -> the hands move
+    hook_question: null
+    status: available
+
+  - id: phone-camera
+    title: How a phone camera takes a photo
+    device: smartphone camera module
+    category: computing
+    real_world_context: An unbranded smartphone on a small tripod taking a photo of a landscape.
+    mechanism: Lens, autofocus actuator and image sensor.
+    chain_to_result: light -> pixels -> processor -> photo
+    hook_question: null
+    status: available
+
+  - id: ssd
+    title: How an SSD stores your files
+    device: solid-state drive
+    category: computing
+    real_world_context: A computer booting up on a desk, no text on screen.
+    mechanism: Flash memory cells with floating gates.
+    chain_to_result: charge stored -> data read -> the system starts
+    hook_question: null
+    status: available
+
+  - id: airbag
+    title: How an airbag inflates so fast
+    device: car airbag system
+    category: vehicle-safety
+    real_world_context: A crash test with a test dummy in a lab, no real people.
+    mechanism: Crash sensor and gas generator.
+    chain_to_result: impact -> the bag inflates in tens of milliseconds
+    hook_question: null
+    status: available
+
+  - id: 3d-printer
+    title: How a 3D printer builds an object
+    device: FDM 3D printer
+    category: precision
+    real_world_context: A 3D printer printing a part on a desk.
+    mechanism: Extruder and stepper motors.
+    chain_to_result: molten plastic layer by layer -> a solid object
+    hook_question: null
+    status: available
+
+  - id: ship-propeller
+    title: How a ship's propeller pushes it
+    device: cargo ship propeller and rudder
+    category: heavy-machinery
+    real_world_context: A cargo ship crossing the open sea.
+    mechanism: Diesel engine, shaft and propeller.
+    chain_to_result: thrust -> the ship moves forward
+    hook_question: null
+    status: available
+
+  - id: toilet-flush
+    title: How a toilet flush works
+    device: toilet cistern and siphon
+    category: home-appliance
+    real_world_context: A clean, empty bathroom.
+    mechanism: Siphon effect and float valve.
+    chain_to_result: water flow -> siphon -> the tank refills
+    hook_question: null
+    status: available
+
+  - id: regenerative-braking-train
+    title: How a metro train makes electricity when braking
+    device: metro train traction motor
+    category: electric-vehicle
+    real_world_context: An empty metro train arriving at a station.
+    mechanism: The traction motor works as a generator while braking.
+    chain_to_result: motion -> electricity -> back to the grid
+    hook_question: null
+    status: available

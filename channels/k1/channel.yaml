@@ -1,0 +1,66 @@
+# Kanal 1 kimliği. Yeni kanal = yeni channels/<kanal>/ klasörü (çekirdek kod değişmez).
+id: k1
+name: "How It Works"
+video_language: en      # videoya giren her şey İngilizce
+ui_language: tr         # Ahmet'e gösterilen her şey Türkçe
+job_prefix: k1
+
+narrator:
+  provider: elevenlabs
+  voice_id: null        # Aşama 1'de seçilecek: derin, net, enerjik bir erkek sesi
+  words_per_minute: [165, 175]
+
+# Bölüm 7 — prompt dosyaları (prompts/ altında, kod içine gömülmez)
+prompts:
+  forbidden: forbidden.txt
+  script_planner: script_planner.txt
+  keyframe: keyframe_template.txt
+  shot: shot_template.txt
+  sfx: sfx_template.txt
+  visual_qc: visual_qc.txt
+  revision: revision_interpreter.txt
+  research: research.txt
+  ref_scoring: ref_scoring.txt
+
+sfx_suffix: "realistic mechanical sound only, no music, no melody, no instruments, no voice"
+
+# Bölüm 3 — ekran dili
+overlay:
+  font: Inter
+  caption:
+    bottom_offset_px: 430
+    color: "#FFFFFF"
+    highlight_color: "#FFC04D"
+    max_words: 6
+    max_lines: 2
+  step_label:
+    top_offset_px: 150
+  hud:
+    max_numbers_on_screen: 1
+  fade_s: 0.3
+
+# Bölüm 3 ve 7.3 — görsel stil
+style:
+  lighting: >-
+    Studio key light from upper left, warm 4500K; cool rim light from back right;
+    soft reflections on metal; dark charcoal background #15171B with subtle gradient.
+    In cutaway frames, combustion areas glow from inside.
+  photorealism: >-
+    Photoreal 3D render quality, physically accurate, sharp focus on subject,
+    shallow depth of field in background only, no cartoon style.
+  composition_safe_zones: >-
+    Top 15% and bottom 25% of the frame are calm, dark areas kept free for on-screen text.
+  color_code:
+    section_faces: "solid orange #FF7A1A"
+    air: "light blue"
+    heated_air: "orange"
+    fuel: "yellow"
+    combustion: "white-yellow-orange"
+    exhaust: "grey"
+
+# Bölüm 3 — ses dili
+audio:
+  music: false
+  loudness_lufs: -14
+  true_peak_db: -1
+  narration_over_sfx_db: [8, 10]

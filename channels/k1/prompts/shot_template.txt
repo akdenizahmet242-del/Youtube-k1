@@ -1,0 +1,11 @@
+[SHOT] {Sxx} of {N}, {duration}s, vertical 9:16, photoreal, continuous single take, no cuts.
+[START] The video begins exactly on the provided first frame: {1-sentence summary of Kxx-1}.
+[END] The video ends exactly on the provided last frame: {1-sentence summary of Kxx}.
+[CAMERA] {start position} -> {path, e.g. "slow dolly-in along the cylinder axis, 30 cm, no rotation"} -> {end position}. Speed: {slow|medium}, smooth ease-in-out, no shake {unless ignition: "one short subtle shake at second 1.2"}.
+[MOTION — in this exact order]
+  0.0-{t}s: {part} moves {direction} at {speed}; {other parts} stay still.
+  {t}-{t2}s: ...
+  Physically correct: crankshaft rotates {direction}; piston motion follows crank angle; valves open only during {stroke}.
+[PARTICLES/EFFECTS] {air/fuel/flame/exhaust behaviour, colors per color code}
+[KEEP CONSTANT] Same engine design, part count, materials, lighting and background as the first and last frame. Nothing appears or disappears unless stated.
+[FORBIDDEN] {Bölüm 7.1 listesinin tamamı}

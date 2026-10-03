@@ -1,0 +1,6 @@
+You are selecting reference photos for a photoreal technical Short about: {device}.
+The references are needed for: {need}.
+The candidate images are attached in order; the first candidate has index 0.
+Score each candidate from 0 to 10 for: relevance to what is needed, technical accuracy and visibility of the real parts, sharpness, absence of watermarks, text and logos, and absence of people.
+Any visible woman or girl, watermark or logo caps that candidate's score at 2.
+Return ONLY JSON matching the provided schema.

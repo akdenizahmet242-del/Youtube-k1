@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "script.json — senaryo ve sahne listesi (Bölüm 14)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "job_id",
+    "title",
+    "total_duration_s",
+    "narration_full",
+    "shots",
+    "title_yt",
+    "description_yt",
+    "tags",
+    "pinned_comment"
+  ],
+  "properties": {
+    "job_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "total_duration_s": {
+      "type": "number"
+    },
+    "narration_full": {
+      "type": "string"
+    },
+    "shots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "beat",
+          "duration_s",
+          "narration",
+          "start_keyframe",
+          "end_keyframe",
+          "start_frame_desc",
+          "end_frame_desc",
+          "camera_move",
+          "motion",
+          "effects",
+          "overlay_label",
+          "hud",
+          "sfx",
+          "refs_needed",
+          "fact_ids",
+          "motion_importance"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^S[0-9]{2}$"
+          },
+          "title": {
+            "type": "string",
+            "description": "short English shot title, e.g. 'Intake stroke'"
+          },
+          "beat": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "duration_s": {
+            "type": "number"
+          },
+          "narration": {
+            "type": "string"
+          },
+          "start_keyframe": {
+            "type": "string",
+            "pattern": "^K[0-9]{2}$"
+          },
+          "end_keyframe": {
+            "type": "string",
+            "pattern": "^K[0-9]{2}$"
+          },
+          "start_frame_desc": {
+            "type": "string"
+          },
+          "end_frame_desc": {
+            "type": "string"
+          },
+          "camera_move": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "from",
+              "path",
+              "to",
+              "speed",
+              "easing"
+            ],
+            "properties": {
+              "from": {
+                "type": "string"
+              },
+              "path": {
+                "type": "string"
+              },
+              "to": {
+                "type": "string"
+              },
+              "speed": {
+                "enum": [
+                  "slow",
+                  "medium"
+                ]
+              },
+              "easing": {
+                "type": "string"
+              }
+            }
+          },
+          "motion": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "t0",
+                "t1",
+                "what"
+              ],
+              "properties": {
+                "t0": {
+                  "type": "number"
+                },
+                "t1": {
+                  "type": "number"
+                },
+                "what": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "effects": {
+            "type": "string"
+          },
+          "overlay_label": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": false,
+            "required": [
+              "n",
+              "t"
+            ],
+            "properties": {
+              "n": {
+                "type": "string"
+              },
+              "t": {
+                "type": "string"
+              }
+            }
+          },
+          "hud": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sfx": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "t",
+                "prompt"
+              ],
+              "properties": {
+                "t": {
+                  "type": "number"
+                },
+                "prompt": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "refs_needed": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "fact_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "motion_importance": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          }
+        }
+      }
+    },
+    "title_yt": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "description_yt": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pinned_comment": {
+      "type": "string"
+    }
+  }
+}

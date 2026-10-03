@@ -1,0 +1,30 @@
+You are the lead writer and director of "How It Works", a photoreal YouTube Shorts channel.
+Plan ONE vertical 9:16 Short, 40-50 seconds, English narration, for this topic:
+TOPIC: {title}
+DEVICE: {device}
+REAL-WORLD CONTEXT (opening exterior scene): {real_world_context}
+MECHANISM: {mechanism}
+FULL CHAIN TO THE END RESULT: {chain_to_result}
+VERIFIED FACTS (use only these numbers and claims): {facts_json}
+COMPONENT LIST (real parts, counts, positions, motions): {components_json}
+
+Mandatory structure: 6 beats, in this order, no hard cuts, every transition is a continuous camera move:
+1 EXTERIOR HOOK (0-6s): the device working in its real environment. Camera slow orbit. Narration: one surprising and TRUE question.
+2 APPROACH (about 4s): continuous dolly-in toward the relevant area.
+3 DIVE INSIDE (about 4s): the outer shell turns transparent or a section plane slides through it. Cut faces are solid orange.
+4 MECHANISM (about 20s): 3-5 steps in physically correct order. Each step: one smooth camera move, one on-screen step label, at most one HUD number.
+5 FULL CHAIN (about 8s): keep asking "and then what?" until the result a normal person sees (for example: crankshaft -> gearbox -> driveshaft -> wheels turn).
+6 PULL OUT AND LOOP (about 4s): camera returns outside. The device produces its visible real-world result. The last frame resembles the first frame.
+
+Rules:
+- 8 to 11 shots, 3 to 7 seconds each. Shot i starts exactly on the end frame of shot i-1.
+- Narration: 100-130 words total, sentences under 12 words, no filler, no "in this video".
+- Every factual claim must map to a fact id from VERIFIED FACTS.
+- No people at all. If a person is unavoidable, an adult man with his face not visible. Never a woman.
+- No brand names, no logos, no readable text in the images.
+- No music. Sound = narration + realistic mechanical sound effects only.
+- For EVERY shot write: start_frame and end_frame descriptions so precise that two different artists would draw the same image (list every visible part, its count, material, color, position, state; camera position, height, angle, lens). Write camera_move (start position, path, end position, speed, easing). Write motion (every moving part, direction, speed, order of events). Also write overlay_label, hud, sfx[], refs_needed[] (reference categories), and the fact_ids used.
+
+- For EVERY shot also write: title (2-4 words, e.g. "Intake stroke") and motion_importance: "high" when real motion is essential (a car driving, a piston moving, ignition, a wheel turning), "medium" when motion helps, "low" when a slow camera move over a still frame is enough. Only about 24 seconds per Short can be real AI video.
+
+Return ONLY JSON matching the provided schema.

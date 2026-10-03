@@ -1,0 +1,1 @@
+{event}, {material}, {distance: close-up|medium}, {duration}s, realistic mechanical sound only, no music, no melody, no instruments, no voice.

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Referans görsel puanları (Bölüm 6)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["scores"],
+  "properties": {
+    "scores": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["index", "score", "reason"],
+        "properties": {
+          "index": {"type": "integer"},
+          "score": {"type": "number"},
+          "reason": {"type": "string"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "facts.json — doğrulanmış gerçekler ve bileşen listesi (Bölüm 5, Adım 2)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["facts", "components"],
+  "properties": {
+    "facts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "claim", "value", "unit", "sources", "confidence"],
+        "properties": {
+          "id": {"type": "string"},
+          "claim": {"type": "string"},
+          "value": {"type": ["string", "null"]},
+          "unit": {"type": ["string", "null"]},
+          "sources": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["url", "title"],
+              "properties": {"url": {"type": "string"}, "title": {"type": "string"}}
+            }
+          },
+          "confidence": {"enum": ["high", "medium", "low"]}
+        }
+      }
+    },
+    "components": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "count", "material", "position", "motion"],
+        "properties": {
+          "name": {"type": "string"},
+          "count": {"type": "integer"},
+          "material": {"type": "string"},
+          "position": {"type": "string"},
+          "motion": {"type": "string"}
+        }
+      }
+    }
+  }
+}

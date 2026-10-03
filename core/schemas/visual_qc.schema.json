@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Görsel kalite kontrol sonucu (Bölüm 7.6)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["pass", "scores", "fatal", "problems", "fix_instructions"],
+  "properties": {
+    "pass": {"type": "boolean"},
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["technical_accuracy", "physical_logic", "continuity", "people", "text_logos", "realism", "composition"],
+      "properties": {
+        "technical_accuracy": {"type": "number"},
+        "physical_logic": {"type": "number"},
+        "continuity": {"type": "number"},
+        "people": {"type": "number"},
+        "text_logos": {"type": "number"},
+        "realism": {"type": "number"},
+        "composition": {"type": "number"}
+      }
+    },
+    "fatal": {"type": "array", "items": {"type": "string"}},
+    "problems": {"type": "array", "items": {"type": "string"}},
+    "fix_instructions": {"type": "string"}
+  }
+}

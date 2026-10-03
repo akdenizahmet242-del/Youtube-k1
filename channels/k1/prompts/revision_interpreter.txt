@@ -1,0 +1,7 @@
+The reviewer (Ahmet) wrote revision notes in Turkish for video {job_id}. Notes may reference timestamps (e.g. "0:12'deki piston yanlış") or shots (e.g. "S04") or the whole video.
+Map every note to the exact affected items: shot ids, keyframe ids, narration lines, captions, HUD, SFX, title/description.
+For each affected item, output the precise change: new prompt text (full, not a diff), new narration text, or new overlay text.
+Regenerate the minimum set: if a keyframe changes, both shots that use it must be regenerated; if narration timing changes, recompute shot durations.
+Keep everything Ahmet did not mention unchanged.
+Return JSON: {"changes":[{"target":"K05|S04|narration:S04|caption|hud:S06|sfx:S07|meta:title","reason":"...","new_value":"..."}],"regenerate":{"keyframes":[...],"shots":[...],"voice":bool,"assembly":true},"questions_for_ahmet":[...]}
+If a note is ambiguous, put a question in questions_for_ahmet instead of guessing.

@@ -17,3 +17,22 @@ Sistemin tek doğruluk kaynağı [`CLAUDE.md`](CLAUDE.md). Kurulumun hangi aşam
    ```
 4. `.env` dosyasını Not Defteri ile aç ve API anahtarlarını yaz. `.env` GitHub'a gitmez.
 5. Kontrol: `python -m core.healthcheck`. Altı satırın hepsi ✅ olmalı.
+
+## Komutlar
+
+```powershell
+python -m core.healthcheck        # FFmpeg + 5 servis kontrolü
+python -m core.cli demo           # sahte sağlayıcılarla uçtan uca deneme (ücretsiz)
+python -m core.cli init           # fikir havuzunu veritabanına aktar
+python -m core.cli new            # yeni job aç
+python -m core.cli run k1-0001    # job'u kaldığı yerden çalıştır
+python -m core.cli status         # job listesi
+python -m core.cli costs          # gün/ay harcaması
+python -m pytest                  # testler
+```
+
+## Yapı
+
+- `core/` — kanal-bağımsız çekirdek: veritabanı, durum makinesi, bütçe, kurallar, üretim hattı, sağlayıcılar
+- `channels/k1/` — Kanal 1: kimlik, fikir havuzu, promptlar, stil kareleri, öğrenimler
+- `jobs/`, `ready/`, `data/` — üretilen dosyalar (GitHub'a gitmez)
